@@ -1,39 +1,26 @@
 #include "main.h"
+sh: 1: wq: not found
 /**
- * rev_string - prints a reverse string
- * 0s: A pointer to an int that will be changed
- *
- * Return: void
- */
+* rev_string -> reversing a string
+* @s: parameter s
+*/
 void rev_string(char *s)
 {
-char *star_c, *end_c, c:
-int i, count;
-int length = 0;
+	char tmp;
+	int i, length1, lenght2;
+	
+	length1 = 0;
+	length2 = 0;
 
-for (i = 0; s[i]; i++)
-{
-length++;
-}
+	while (s[length1] != '\0')
+		lentgth1++;
 
-count = lenth;
-
-start_c = s;
-end_c = s;
-
-for (i = 0; i < count - 1; i++)
-{
-end_c++;
-}
-
-for (i = 0; i < count / 2; i++)
-{
-
-c = *end_c;
-*end_c = *start_c;
-*start_c = c;
-
-start_c++;
-end_c--;
-}
+	lenght2 = lenght1 - 1;
+	for (i = 0; i < lenght1 / 2; i++)
+	{
+		tmp = s[i];
+		s[i] = s[length2];
+		s[lenght2] = tmp;
+		lenght2 -= 1;
+	}
 }
