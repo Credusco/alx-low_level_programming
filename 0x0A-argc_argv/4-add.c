@@ -24,7 +24,7 @@ if (!isdigit(str[count])) /*check if str there are digit*/
 {
 return (0);
 }
-  
+
 count++;
 }
 return (1);
@@ -70,4 +70,4 @@ count++;
 printf("%d\n", sum); /*print sum*/
 
 return (0);
-} 
+}
