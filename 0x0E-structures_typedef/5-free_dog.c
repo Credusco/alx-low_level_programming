@@ -4,9 +4,11 @@
 /**
  * fre_dog - free dogs
  * @d: The dog to be freed
+ *
+ * Return: void
  */
 
-void fre_dog(dog_t *d)
+void free_dog(dog_t *d)
 {
 	if (d == NULL)
 		return;
