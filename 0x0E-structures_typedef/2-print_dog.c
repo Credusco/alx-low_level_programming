@@ -7,7 +7,7 @@
  * @d: the struct dog to be printed.
  */
 
-void print_dog(struct dig *d)
+void print_dog(struct dog *d)
 {
 	if (d == NULL)
 		return;
