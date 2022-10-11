@@ -3,14 +3,15 @@
 #include <stdlib.h>
 
 /**
- * print_dog - prints a struct dog
- * @d: the struct dog to be printed.
+ * print_dog - Prints a struct dog.
+ * @d: The struct dog to be printed.
  */
 
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
 		return;
+
 	if (d->name == NULL)
 		printf("Name: (nil)\n");
 	else
@@ -24,5 +25,5 @@ void print_dog(struct dog *d)
 	if (d->owner == NULL)
 		printf("Owner: (nil)\n");
 	else
-		printf("owner: %s\n", d->owner);
+		printf("Owner: %s\n", d->owner);
 }
